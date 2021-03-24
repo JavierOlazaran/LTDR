@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { CmsAdminGuard } from './cms-admin.guard';
+import { CmsAdminGuard } from '../cms-admin.guard';
 
 describe('CmsAdminGuard', () => {
   let guard: CmsAdminGuard;
