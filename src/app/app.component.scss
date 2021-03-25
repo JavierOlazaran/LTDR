@@ -1,0 +1,11 @@
+
+#app__wrapper {
+  background-image: url('../assets/imgs/main_background_img.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: grid;
+  grid-template-columns: max-content auto;
+  grid-template-rows: 100vh;
+}

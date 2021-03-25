@@ -1,0 +1,18 @@
+// Main color palette
+$LTDR_VIOLET: #642759;
+$LTDR_VIOLET_DARK: #3F2D43;
+$LTDR_BLURRY_VIOLET: rgba(100, 39, 89, .85);
+$LTDR_BLURRY_VIOLET_DARK: rgba(63, 45, 67, .85);
+$LTDR_BLACK: #252525;
+$LTDR_DARK_GREEN: #519872;
+$LTDR_MID_GREEN: #A4B494;
+$LTDR_LIGHT_GREEN: #BEC5AD;
+
+
+// Gradients
+$LTDR_ACCENT_GRADIENT:
+  linear-gradient(148deg,
+  rgba(63,45,67,1) 0%,
+  rgba(100,39,89,1) 47%,
+  rgba(100,39,89,1) 100%
+  );

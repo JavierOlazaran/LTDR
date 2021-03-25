@@ -1,0 +1,35 @@
+@use '../../../../assets/styles/theme';
+
+#nav_bar__wrapper {
+  background: theme.$LTDR_BLURRY_VIOLET_DARK;
+  backdrop-filter: blur(12px) ;
+  border: solid 1px theme.$LTDR_VIOLET_DARK;
+  box-shadow: 10px 1px 9px -6px rgba(0,0,0,0.63);
+  height: 100vh;
+  width: max-content;
+
+  // Nav buttons list styles
+  #nav_links__wrapper {
+    padding: 0;
+    margin: 0;
+
+    li {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+
+      a {
+        text-decoration: none;
+        text-align: start;
+        color: white;
+        font-size: 24px;
+        display: block;
+        padding: 20px 50px;
+      }
+
+      a:hover {
+        background: theme.$LTDR_ACCENT_GRADIENT
+      }
+    }
+  }
+}

@@ -4,26 +4,19 @@ import { AppComponent } from './app.component';
 
 
 const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full'},
   {
-    path: '',
-    component: AppComponent,
-    children: [
-      { path: '', redirectTo: 'home', pathMatch: 'full'},
-      {
-        path: 'home',
-        loadChildren: () => import('./pages/landing/landing.module').then(m => m.LandingModule)
-      },
-      {
-        path: 'combat-calculator',
-        loadChildren: () => import('./pages/combat-calculator/combat-calculator.module').then(m => m.CombatCalculatorModule)
-      },
-      {
-        path: 'dungeon',
-        loadChildren: () => import('./pages/admin/admin.module').then(m => m.AdminModule)
-      }
-    ]
+    path: 'home',
+    loadChildren: () => import('./pages/landing/landing.module').then(m => m.LandingModule)
   },
-
+  {
+    path: 'combat-calculator',
+    loadChildren: () => import('./pages/combat-calculator/combat-calculator.module').then(m => m.CombatCalculatorModule)
+  },
+  {
+    path: 'dungeon',
+    loadChildren: () => import('./pages/admin/admin.module').then(m => m.AdminModule)
+  }
 ];
 
 @NgModule({
