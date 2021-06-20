@@ -1,12 +1,21 @@
-@use '../../../../assets/styles/theme';
+@use '../../../../assets/styles';
 
 #nav_bar__wrapper {
-  background: theme.$LTDR_BLURRY_VIOLET_DARK;
+  background: styles.$LTDR_BLURRY_VIOLET_DARK;
   backdrop-filter: blur(12px) ;
-  border: solid 1px theme.$LTDR_VIOLET_DARK;
+  border: solid 1px styles.$LTDR_VIOLET_800;
   box-shadow: 10px 1px 9px -6px rgba(0,0,0,0.63);
   height: 100vh;
   width: max-content;
+  display: flex;
+  flex-direction: column;
+
+  #logo_taberna {
+    max-width: 100px;
+    max-height: 100px;
+    align-self: center;
+    margin: 50px;
+  }
 
   // Nav buttons list styles
   #nav_links__wrapper {
@@ -28,16 +37,46 @@
       }
 
       a:hover {
-        background: theme.$LTDR_ACCENT_GRADIENT
+        background: styles.$LTDR_ACCENT_GRADIENT
       }
     }
   }
 
   #calc_combates__btn {
+    border: solid 1px #EBEBEB;
     max-width: 80%;
     border-radius: 4px;
     font-size: 20px;
     outline: none;
     padding: 1rem 1.5rem;
+    align-self: center;
+    margin-top: auto;
+  }
+
+  footer {
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 30px 0;
+
+    section {
+      font-family: roboto;
+      color: #EBEBEB;
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        a {
+          text-decoration: none;
+          color: #EBEBEB;
+        }
+      }
+    }
+  }
+
+  nav_bar__button {
+    font-family: Klaudia;
   }
 }

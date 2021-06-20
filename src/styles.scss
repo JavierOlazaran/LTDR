@@ -6,7 +6,9 @@
    }
  }
 
-.acrylic__bacground {
-  background-color: aqua;
-  
+ .acrylic__background {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  color: white;
+  box-shadow: 3px 3px 13px rgba(0,0,0,0.45);
 }
