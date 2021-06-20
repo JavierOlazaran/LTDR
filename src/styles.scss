@@ -1,5 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
- body {
+@font-face {
+  font-family: 'klaudiabook';
+  src: url('./assets/fonts/Klaudia/klaudia-a855-webfont.woff2') format('woff2'),
+       url('./assets/fonts/Klaudia/klaudia-a855-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'klaudiabold';
+  src: url('./assets/fonts/Klaudia/klaudiabold-e8oe-webfont.woff2') format('woff2'),
+       url('./assets/fonts/Klaudia/klaudiabold-e8oe-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'klaudiabold_oblique';
+  src: url('./assets/fonts/Klaudia/klaudiaboldoblique-ongp-webfont.woff2') format('woff2'),
+       url('./assets/fonts/Klaudia/klaudiaboldoblique-ongp-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'klaudiaoblique';
+  src: url('./assets/fonts/Klaudia/klaudiaoblique-zw28-webfont.woff2') format('woff2'),
+       url('./assets/fonts/Klaudia/klaudiaoblique-zw28-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+body {
    margin: 0;
    p {
      margin: 0;
