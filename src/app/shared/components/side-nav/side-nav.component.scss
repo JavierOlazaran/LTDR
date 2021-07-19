@@ -2,17 +2,17 @@
 
 #nav_bar__wrapper {
   background: styles.$LTDR_BLURRY_VIOLET_DARK;
-  backdrop-filter: blur(12px) ;
+  backdrop-filter: blur(30px);
   border: solid 1px styles.$LTDR_VIOLET_800;
   box-shadow: 10px 1px 9px -6px rgba(0,0,0,0.63);
+  width: 330px;
   height: 100vh;
-  width: max-content;
   display: flex;
   flex-direction: column;
 
   #logo_taberna {
-    max-width: 100px;
-    max-height: 100px;
+    width: 125px;
+    height: 125px;
     align-self: center;
     margin: 50px;
   }
@@ -32,7 +32,7 @@
         text-decoration: none;
         text-align: start;
         color: white;
-        font-size: 24px;
+        font-size: 20px;
         display: block;
         padding: 20px 50px;
       }
@@ -44,14 +44,17 @@
   }
 
   #calc_combates__btn {
+    font-family: roboto;
+    font-weight: 100;
     border: solid 1px #EBEBEB;
-    max-width: 80%;
+    max-width: 65%;
     border-radius: 4px;
     font-size: 20px;
     outline: none;
     padding: 1rem 1.5rem;
     align-self: center;
     margin-top: auto;
+    text-align: start;
   }
 
   footer {
@@ -64,6 +67,7 @@
     section {
       font-family: roboto;
       color: #EBEBEB;
+      padding: 0 16px;
 
       ul {
         list-style: none;

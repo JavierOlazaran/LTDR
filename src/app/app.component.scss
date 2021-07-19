@@ -1,6 +1,30 @@
 
 #app__wrapper {
   display: grid;
-  grid-template-columns: max-content auto;
-  grid-template-rows: 100vh;
+  grid-template-columns: 330px auto;
+  grid-template-rows:repeat(100vh) ;
+}
+
+.background_img {
+  background-image: url('../../src/assets/imgs/main_background_img.png');
+  background-repeat: no-repeat;
+  //background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -90;
+}
+
+.img__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -80;
+  background-color: rgba(30, 26, 26, 0.68);
+  height: 100vh;
+  width: 100vw;
 }

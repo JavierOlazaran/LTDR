@@ -1,19 +1,3 @@
-#landing_page__wrapper {
-  background-image: url('../../../assets/imgs/main_background_img.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -99;
-
-  #img__overlay {
-    background-color: rgba(30, 26, 26, 0.68);
-    height: 100%;
-    width: 100%;
-  }
+.landing_page__wrapper {
 }
