@@ -1,20 +1,21 @@
+import { routesConstants } from './shared/constants/routes.constants';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: '', redirectTo: routesConstants.rootRoutes.LANDING_PAGE, pathMatch: 'full'},
   {
-    path: 'home',
+    path: routesConstants.rootRoutes.LANDING_PAGE,
     loadChildren: () => import('./pages/landing/landing.module').then(m => m.LandingModule)
   },
   {
-    path: 'combat-calculator',
+    path: routesConstants.rootRoutes.COMBAT_CALCULATOR_PAGE,
     loadChildren: () => import('./pages/combat-calculator/combat-calculator.module').then(m => m.CombatCalculatorModule)
   },
   {
-    path: 'dungeon',
+    path: routesConstants.rootRoutes.ADMIN_PAGE,
     loadChildren: () => import('./pages/admin/admin.module').then(m => m.AdminModule)
   }
 ];

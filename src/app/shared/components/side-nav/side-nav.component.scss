@@ -1,24 +1,25 @@
 @use '../../../../assets/styles';
 
-#nav_bar__wrapper {
+.nav_bar__wrapper {
   background: styles.$LTDR_BLURRY_VIOLET_DARK;
   backdrop-filter: blur(30px);
   border: solid 1px styles.$LTDR_VIOLET_800;
   box-shadow: 10px 1px 9px -6px rgba(0,0,0,0.63);
   width: 330px;
-  height: 100vh;
+  height: 100%;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
 
-  #logo_taberna {
-    width: 125px;
-    height: 125px;
+  .logo_taberna {
+    width: 120px;
+    height: 120px;
     align-self: center;
-    margin: 50px;
+    margin: 10px;
   }
 
   // Nav buttons list styles
-  #nav_links__wrapper {
+  .nav_links__wrapper {
     padding: 0;
     margin: 0;
     font-family: styles.$FONT_KLAUDIA;
@@ -35,6 +36,7 @@
         font-size: 20px;
         display: block;
         padding: 20px 50px;
+        transition: background cubic-bezier(0.075, 0.82, 0.165, 1);
       }
 
       a:hover {
@@ -43,18 +45,19 @@
     }
   }
 
-  #calc_combates__btn {
+  .calc_combates__btn {
+    outline: none;
+
     font-family: roboto;
     font-weight: 100;
-    border: solid 1px #EBEBEB;
-    max-width: 65%;
-    border-radius: 4px;
     font-size: 20px;
-    outline: none;
+    text-align: start;
+
+    max-width: 65%;
     padding: 1rem 1.5rem;
+
     align-self: center;
     margin-top: auto;
-    text-align: start;
   }
 
   footer {
@@ -72,6 +75,7 @@
       ul {
         list-style: none;
         padding: 0;
+        font-size: 12px;
 
         a {
           text-decoration: none;
@@ -81,7 +85,7 @@
     }
   }
 
-  nav_bar__button {
+  .nav_bar__button {
     font-family: Klaudia;
   }
 }

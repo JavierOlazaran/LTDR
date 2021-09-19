@@ -1,29 +1,28 @@
 
-#app__wrapper {
-  display: grid;
-  grid-template-columns: 330px auto;
-  grid-template-rows:repeat(100vh) ;
-}
-
-.background_img {
+.app__wrapper {
   background-image: url('../../src/assets/imgs/main_background_img.png');
   background-repeat: no-repeat;
-  //background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -90;
+  isolation: isolate;
+
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+
+  .outlet__container {
+    flex-grow: 1;
+  }
 }
 
-.img__overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -80;
+// Img overlay
+.app__wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
   background-color: rgba(30, 26, 26, 0.68);
   height: 100vh;
   width: 100vw;
