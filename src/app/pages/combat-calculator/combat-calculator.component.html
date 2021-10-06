@@ -1,10 +1,23 @@
 <div class="landing_page__wrapper">
-    <div class="combat_calculator__btn__container">
+    <div class="btn__container white__block"><h4>Opciones Personajes</h4>
     </div>
     <div class="schedule__container">
+        <div class="schedule__container__experience white__block">XP Disponibles<p>32</p></div>
+        <div class="schedule__container__experience white__block">XP Utilizados<p>32</p></div>
+        <div class="schedule__container__selected white__block">
+            <div class="content_display__container">   
+                    <div class="app-monster-card"></div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="filter__container white__block">
+        <h4>Filtros</h4>
     </div>
     <div class="content_display__container">
-        <!--app-monster-card [monster]="monster"></app-monster-card-->
+        <app-monster-card></app-monster-card>
+        <app-monster-card></app-monster-card>
         <app-monster-card></app-monster-card>
         <app-monster-card></app-monster-card>
     </div>

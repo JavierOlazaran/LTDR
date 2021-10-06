@@ -38,6 +38,11 @@
 }
 // Fonts
 /******************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 html,
 body {
@@ -68,5 +73,7 @@ body {
   background: white;
   color: black;
   border-radius: 8px;
+  padding: 1rem;
+
 }
 /*******************************************/

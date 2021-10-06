@@ -1,28 +1,59 @@
+@use "../../../assets/styles";
 
 .landing_page__wrapper {
-    width: 100%;
-    height: 100%;
-    padding: 5vh 5%;
-    box-sizing: border-box;
-  
+  font-family: styles.$FONT_ROBOTO;
+  font-size: 1rem;
+  color: antiquewhite;
+  width: 100%;
+  height: 100%;
+  padding: 5vh 5%;
+  box-sizing: border-box;
+
+  display: grid;
+  row-gap: 5vh;
+  column-gap: 3.5vw;
+  grid-template-rows: 1fr 6fr;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+    "btn      filter"
+    "schedule content";
+
+  .btn__container {
+    padding: 1rem;
+    grid-area: btn;
+  }
+
+  .schedule__container {
+    grid-area: schedule;
     display: grid;
     row-gap: 5vh;
     column-gap: 3.5vw;
-    grid-template-rows: 1fr 6fr;
-    grid-template-columns: 1fr 3fr;
-    grid-template-areas: "btn      content"
-                         "schedule content";
-  
-    .combat_calculator__btn__container {
-      grid-area: btn;
+    grid-template-rows: 3.5rem 6fr;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+
+    &__experience {
+      font-size: .5rem;
+      text-align: center;
+      display: inline-block;
+      
+      & p {
+        font-size: .8rem;
+      }
     }
-  
-    .schedule__container {
-      grid-area: schedule;
-    }
-  
-    .content_display__container {
-      grid-area: content;
+
+    &__selected {
+      grid-column: 1 / -1;
     }
   }
-  
+
+  .filter__container {
+    grid-area: filter;
+  }
+
+  .content_display__container {
+    grid-area: content;
+    display: flex;
+
+  }
+}
