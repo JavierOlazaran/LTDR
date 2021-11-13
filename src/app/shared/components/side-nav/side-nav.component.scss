@@ -20,31 +20,7 @@
   }
 
   // Nav buttons list styles
-  .nav_links__wrapper {
-    padding: 0;
-    margin: 0;
-    font-family: styles.$FONT_KLAUDIA;
 
-    li {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-
-      a {
-        text-decoration: none;
-        text-align: start;
-        color: white;
-        font-size: 20px;
-        display: block;
-        padding: 20px 50px;
-        transition: background cubic-bezier(0.075, 0.82, 0.165, 1);
-      }
-
-      a:hover {
-        background: styles.$LTDR_ACCENT_GRADIENT
-      }
-    }
-  }
 
   .calc_combates__btn {
     outline: none;

@@ -1,0 +1,17 @@
+@use '../../../../../../assets/styles';
+
+.nav_bar__button {
+  text-decoration: none;
+  text-align: start;
+  color: white;
+  font-size: 20px;
+  display: block;
+  padding: 20px 50px;
+  transition: background cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  &:hover {
+    background: styles.$LTDR_ACCENT_GRADIENT
+  }
+}
+
+
