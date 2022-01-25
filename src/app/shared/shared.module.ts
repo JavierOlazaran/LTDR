@@ -13,7 +13,7 @@ import { NavBarFooterComponent } from './components/side-nav/nav-bar-footer/nav-
   ],
   exports: [
     SideNavComponent,
-    CombatCalculatorBtnComponent
+    CombatCalculatorBtnComponent,
   ]
 })
 export class SharedModule { }

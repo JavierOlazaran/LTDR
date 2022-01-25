@@ -20,14 +20,12 @@
   }
 
   // Nav buttons list styles
-
-
   .calc_combates__btn {
     outline: none;
 
     font-family: roboto;
     font-weight: 100;
-    font-size: 20px;
+    font-size: 2rem;
     text-align: start;
 
     max-width: 65%;
@@ -52,7 +50,7 @@
       ul {
         list-style: none;
         padding: 0;
-        font-size: 12px;
+        font-size: 1.2rem;
 
         a {
           text-decoration: none;
@@ -63,6 +61,6 @@
   }
 
   .nav_bar__button {
-    font-family: Klaudia;
+    font-family: styles.$FONT_KLAUDIA;
   }
 }
