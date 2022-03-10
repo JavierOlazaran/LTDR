@@ -1,0 +1,29 @@
+
+.app__wrapper {
+  background-image: url('../../src/assets/imgs/main_background_img.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  isolation: isolate;
+
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+
+  .outlet__container {
+    flex-grow: 1;
+  }
+}
+
+// Img overlay
+.app__wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: rgba(30, 26, 26, 0.68);
+  height: 100vh;
+  width: 100vw;
+}

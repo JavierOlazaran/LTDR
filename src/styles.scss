@@ -1,1 +1,72 @@
-/* You can add global styles to this file, and also import other style files */
+/******************************************************************/
+// Fonts
+@font-face {
+  font-family: "klaudiabook";
+  src: url("./assets/fonts/Klaudia/klaudia-a855-webfont.woff2") format("woff2"),
+    url("./assets/fonts/Klaudia/klaudia-a855-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "klaudiabold";
+  src: url("./assets/fonts/Klaudia/klaudiabold-e8oe-webfont.woff2")
+      format("woff2"),
+    url("./assets/fonts/Klaudia/klaudiabold-e8oe-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "klaudiabold_oblique";
+  src: url("./assets/fonts/Klaudia/klaudiaboldoblique-ongp-webfont.woff2")
+      format("woff2"),
+    url("./assets/fonts/Klaudia/klaudiaboldoblique-ongp-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "klaudiaoblique";
+  src: url("./assets/fonts/Klaudia/klaudiaoblique-zw28-webfont.woff2")
+      format("woff2"),
+    url("./assets/fonts/Klaudia/klaudiaoblique-zw28-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+// Fonts
+/******************************************************************/
+
+html,
+body {
+  margin: 0;
+  height: 100vh;
+  font-size: 62.5%;
+}
+body {
+  p {
+    margin: 0;
+  }
+}
+
+/********************************************/
+// Global classes
+
+.acrylic__block {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  color: white;
+  box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.45);
+  border: solid 1px rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+}
+
+// Fondo
+.white__block {
+  background: white;
+  color: black;
+  border-radius: 8px;
+}
+/*******************************************/
