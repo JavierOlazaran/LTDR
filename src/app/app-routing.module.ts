@@ -17,6 +17,10 @@ const routes: Routes = [
   {
     path: routesConstants.rootRoutes.ADMIN_PAGE,
     loadChildren: () => import('./pages/admin/admin.module').then(m => m.AdminModule)
+  },
+  {
+    path: routesConstants.rootRoutes.CONTACT_PAGE,
+    loadChildren: () => import('./pages/contact/contact.module').then(m => m.ContactModule)
   }
 ];
 

@@ -2,6 +2,7 @@ export const routesConstants = {
   rootRoutes: {
     LANDING_PAGE: 'home',
     COMBAT_CALCULATOR_PAGE: 'combat-calculator',
-    ADMIN_PAGE: 'dungeon'
+    ADMIN_PAGE: 'dungeon',
+    CONTACT_PAGE: 'contact',
   }
 }
