@@ -1,1 +1,29 @@
-<p>nav-bar-mobile works!</p>
+<!-- TODO: Add aria -->
+<div class="titleBar">
+  <img
+    class="logo_taberna"
+    src="../../../../assets/imgs/chest.svg"
+    alt="Logo taberna">
+  <h1>La Taberna De Rol</h1>
+</div>
+
+<nav class="mobileNavbar">
+  <div
+    *ngIf="isNavbarExpanded"
+    @expand
+    @fold
+    class="mobileNavbar__hiddenControlsContainer--expanded"
+  >
+    <app-page-navigation></app-page-navigation>
+  </div>
+
+  <div class="mobileNavbar__permanentControlsContainer">
+    <button
+      aria-label='Calculadora de combates'
+      class="mobileNavbar__combatCalculatorButton acrylic__block"
+    >Calculadora de combates
+    </button>
+
+    <button class="mobileNavbar__toggleButton" (click)="onToggleClick()">Toggle</button>
+  </div>
+</nav>
