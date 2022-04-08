@@ -7,7 +7,7 @@
   <h1>La Taberna De Rol</h1>
 </div>
 
-<nav class="mobileNavbar">
+<nav class="mobileNavbar" [ngClass]="{ 'expanded': isNavbarExpanded, '' : !isNavbarExpanded }">
   <div
     *ngIf="isNavbarExpanded"
     @expand
@@ -24,6 +24,10 @@
     >Calculadora de combates
     </button>
 
-    <button class="mobileNavbar__toggleButton" (click)="onToggleClick()">Toggle</button>
+    <button class="mobileNavbar__toggleButton" (click)="onToggleClick()">
+      <div class="mobileNavbar__toggleButtonHamburgerStripe"></div>
+      <div class="mobileNavbar__toggleButtonHamburgerStripe"></div>
+      <div class="mobileNavbar__toggleButtonHamburgerStripe"></div>
+    </button>
   </div>
 </nav>

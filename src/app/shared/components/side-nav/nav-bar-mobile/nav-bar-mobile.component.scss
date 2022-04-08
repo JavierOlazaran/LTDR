@@ -1,23 +1,29 @@
 @use "src/assets/styles";
 
-$FOLDED_NAVBAR-HEIGHT: 10vh;
-
 .titleBar {
   position: fixed;
   top: 0;
   width: 100vw;
   height: min-content;
   box-sizing: border-box;
-  z-index: 100;
+  z-index: 1000;
 
   display: flex;
-  padding: 1rem 2rem;
-  justify-content: space-between;
+  padding: 1rem 1rem 1rem 0;
+  justify-content: space-around;
+  align-items: center;
 
   background: styles.$LTDR_BLURRY_VIOLET_DARK;
   backdrop-filter: blur(30px);
   border: solid 1px styles.$LTDR_VIOLET_800;
   box-shadow: 10px 1px 9px -6px rgba(0, 0, 0, 0.63);
+
+  h1 {
+    font-family: styles.$FONT_KLAUDIA;
+    margin: 0;
+    font-size: 3.2em;
+    color: styles.$LTDR_WHITE;
+  }
 }
 
 .mobileNavbar {
@@ -25,7 +31,7 @@ $FOLDED_NAVBAR-HEIGHT: 10vh;
   position: fixed;
   bottom: 0;
   width: 100vw;
-  height: min-content;
+  height: min-content;// $FOLDED_NAVBAR-HEIGHT;
   box-sizing: border-box;
   z-index: 100;
 
@@ -40,21 +46,16 @@ $FOLDED_NAVBAR-HEIGHT: 10vh;
       padding: 1rem 2rem;
       background-color: styles.$LTDR_BLURRY_VIOLET_DARK;
       backdrop-filter: blur(30px);
-      height: 100 - $FOLDED_NAVBAR-HEIGHT;
+      height: 100%;
       width: 100%;
       box-sizing: border-box;
-
-      .logo_taberna {
-        margin: 3em 0 3em 50%;
-        transform: translateX(-50%);
-      }
     }
   }
 
   &__permanentControlsContainer {
     box-sizing: border-box;
     padding: 1rem 2rem;
-    height: ($FOLDED_NAVBAR-HEIGHT);
+    height: min-content;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -70,17 +71,30 @@ $FOLDED_NAVBAR-HEIGHT: 10vh;
       font-family: roboto, arial, sans-serif; //TODO: Move this to custom prop
       font-weight: 100;
       font-size: 1.3rem;
-      text-align: start;
+      text-align: left;
+      height: min-content;
 
       max-width: 65%;
       padding: 1em 1.5em;
     }
 
-    &__toggleButton {
-      outline: none;
-      background-color: transparent;
-      border: none;
-      color: styles.$LTDR_WHITE;
+  }
+
+  &__toggleButton {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    color: styles.$LTDR_WHITE;
+    height: 3em;
+    width: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &HamburgerStripe {
+      width: 100%;
+      height: 4px;
+      background-color: styles.$LTDR_BEIGE-GREEN;
     }
   }
 }

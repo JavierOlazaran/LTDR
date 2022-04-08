@@ -3,41 +3,42 @@
 @font-face {
   font-family: "klaudiabook";
   src: url("./assets/fonts/Klaudia/klaudia-a855-webfont.woff2") format("woff2"),
-    url("./assets/fonts/Klaudia/klaudia-a855-webfont.woff") format("woff");
+  url("./assets/fonts/Klaudia/klaudia-a855-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "klaudiabold";
-  src: url("./assets/fonts/Klaudia/klaudiabold-e8oe-webfont.woff2")
-      format("woff2"),
-    url("./assets/fonts/Klaudia/klaudiabold-e8oe-webfont.woff") format("woff");
+  src: url("./assets/fonts/Klaudia/klaudiabold-e8oe-webfont.woff2") format("woff2"),
+  url("./assets/fonts/Klaudia/klaudiabold-e8oe-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "klaudiabold_oblique";
-  src: url("./assets/fonts/Klaudia/klaudiaboldoblique-ongp-webfont.woff2")
-      format("woff2"),
-    url("./assets/fonts/Klaudia/klaudiaboldoblique-ongp-webfont.woff")
-      format("woff");
+  src: url("./assets/fonts/Klaudia/klaudiaboldoblique-ongp-webfont.woff2") format("woff2"),
+  url("./assets/fonts/Klaudia/klaudiaboldoblique-ongp-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "klaudiaoblique";
-  src: url("./assets/fonts/Klaudia/klaudiaoblique-zw28-webfont.woff2")
-      format("woff2"),
-    url("./assets/fonts/Klaudia/klaudiaoblique-zw28-webfont.woff")
-      format("woff");
+  src: url("./assets/fonts/Klaudia/klaudiaoblique-zw28-webfont.woff2") format("woff2"),
+  url("./assets/fonts/Klaudia/klaudiaoblique-zw28-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
 // Fonts
 /******************************************************************/
+root {
+  // Fonts
+  --LTDR_font--primary: 'klaudiabook';
+  --LTDR_font--secondary: 'roboto';
+}
 
 html,
 body {
@@ -45,6 +46,7 @@ body {
   height: 100vh;
   font-size: 62.5%;
 }
+
 body {
   p {
     margin: 0;
@@ -69,4 +71,5 @@ body {
   color: black;
   border-radius: 8px;
 }
+
 /*******************************************/
