@@ -8,6 +8,7 @@ import { NavBarFooterComponent } from './components/side-nav/nav-bar-footer/nav-
 import { MonsterCardComponent } from './components/monster-card/monster-card.component';
 import { NavBarMobileComponent } from './components/side-nav/nav-bar-mobile/nav-bar-mobile.component';
 import { NavBarDesktopComponent } from './components/side-nav/nav-bar-desktop/nav-bar-desktop.component';
+import { HamburgerBtnComponent } from './components/hamburger-btn/hamburger-btn.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NavBarDesktopComponent } from './components/side-nav/nav-bar-desktop/na
     NavBarFooterComponent,
     MonsterCardComponent,
     NavBarMobileComponent,
-    NavBarDesktopComponent
+    NavBarDesktopComponent,
+    HamburgerBtnComponent
   ],
   imports: [
     CommonModule
@@ -28,7 +30,8 @@ import { NavBarDesktopComponent } from './components/side-nav/nav-bar-desktop/na
     CombatCalculatorBtnComponent,
     MonsterCardComponent,
     NavBarMobileComponent,
-    NavBarDesktopComponent
+    NavBarDesktopComponent,
+    HamburgerBtnComponent
   ]
 })
 export class SharedModule { }

@@ -54,11 +54,12 @@
 
   &__permanentControlsContainer {
     box-sizing: border-box;
-    padding: 1rem 2rem;
+    padding: 2rem;
     height: min-content;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     background: styles.$LTDR_BLURRY_VIOLET_DARK;
     backdrop-filter: blur(30px);

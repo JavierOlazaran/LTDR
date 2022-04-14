@@ -24,10 +24,6 @@
     >Calculadora de combates
     </button>
 
-    <button class="mobileNavbar__toggleButton" (click)="onToggleClick()">
-      <div class="mobileNavbar__toggleButtonHamburgerStripe"></div>
-      <div class="mobileNavbar__toggleButtonHamburgerStripe"></div>
-      <div class="mobileNavbar__toggleButtonHamburgerStripe"></div>
-    </button>
+    <app-hamburger-btn (toggle)="onToggleClick($event)"></app-hamburger-btn>
   </div>
 </nav>

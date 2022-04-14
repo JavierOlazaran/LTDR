@@ -34,8 +34,8 @@ export class NavBarMobileComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onToggleClick(): void {
-    this.isNavbarExpanded = !this.isNavbarExpanded;
+  onToggleClick(event: boolean): void {
+    this.isNavbarExpanded = event;
   }
 
 }
