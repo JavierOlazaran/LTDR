@@ -1,11 +1,13 @@
 <nav class="nav_bar__wrapper">
   <img class="logo_taberna" src="../../../../assets/imgs/chest.svg" alt="Logo taberna">
 
-  <app-page-navigation></app-page-navigation>
+  <div class="nav_bar__navigationWrapper">
+    <app-page-navigation></app-page-navigation>
+  </div>
 
-  <!-- TODO: Create separated component -->
-  <button aria-label='Calculadora de combates' class="calc_combates__btn acrylic__block">Calculadora de combates
-  </button>
+  <div class="nav_bar__combatCalcBtnWrapper">
+    <app-combat-calculator-btn></app-combat-calculator-btn>
+  </div>
 
   <footer>
     <!-- TODO: Create separated component -->

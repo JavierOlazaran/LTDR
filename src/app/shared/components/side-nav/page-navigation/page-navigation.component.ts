@@ -14,22 +14,22 @@ export class PageNavigationComponent implements OnInit {
     {
       name: 'inicio',
       route: routesConstants.rootRoutes.LANDING_PAGE,
-      iconSrc: ''
+      iconSrc: '../../../../../assets/imgs/svg/home-icon.svg#g46'
     },
     {
       name: 'acerca',
       route: '',
-      iconSrc: ''
+      iconSrc: '../../../../../../assets/imgs/svg/ship-icon.svg#g6'
     },
     {
       name: 'contacto',
       route: '',
-      iconSrc: ''
+      iconSrc: '../../../../../../assets/imgs/svg/papyrus-icon.svg#g108'
     },
     {
       name: 'donaciones',
       route: '',
-      iconSrc: ''
+      iconSrc: '../../../../../../assets/imgs/svg/money_bag-icon.svg#g10'
     }
   ];
 

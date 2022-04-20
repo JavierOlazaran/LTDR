@@ -1,69 +1,82 @@
 @use '../../../../../assets/styles';
 
-.nav_bar__wrapper {
-  // TODO: set as mixin //
-  background: styles.$LTDR_BLURRY_VIOLET_DARK;
-  backdrop-filter: blur(30px);
-  border: solid 1px styles.$LTDR_VIOLET_800;
-  box-shadow: 10px 1px 9px -6px rgba(0, 0, 0, 0.63);
-  //////////
+.nav_bar {
 
-  width: 15vw;
-  min-width: 260px;
-  height: 100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-
-  .logo_taberna {
-    width: 120px;
-    height: 120px;
-    align-self: center;
-    margin: 10px;
+  &__navigationWrapper {
+    flex-grow: 1;
   }
 
-  // Nav buttons list styles
-  .calc_combates__btn {
-    outline: none;
-
-    font-family: roboto, arial, sans-serif; //TODO: Move this to custom prop
-    font-weight: 100;
-    font-size: 2rem;
-    text-align: start;
-
-    max-width: 65%;
-    padding: 1rem 1.5rem;
-
+  &__combatCalcBtnWrapper {
+    margin: 5em 0;
     align-self: center;
-    margin-top: auto;
+    max-width: 90%;
   }
 
-  footer {
-    align-self: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    margin: 30px 0;
+  &__wrapper {
+    // TODO: set as mixin //
+    background: styles.$LTDR_BLURRY_VIOLET_DARK;
+    backdrop-filter: blur(30px);
+    border: solid 1px styles.$LTDR_VIOLET_800;
+    box-shadow: 10px 1px 9px -6px rgba(0, 0, 0, 0.63);
+    //////////
 
-    section {
-      font-family: roboto, arial, sans-serif;
-      color: #EBEBEB;
-      padding: 0 16px;
+    width: 15vw;
+    min-width: 260px;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 
-      ul {
-        list-style: none;
-        padding: 0;
-        font-size: 1.2rem;
+    .logo_taberna {
+      width: 120px;
+      height: 120px;
+      align-self: center;
+      margin: 10px;
+    }
 
-        a {
-          text-decoration: none;
-          color: #EBEBEB;
+    // Nav buttons list styles
+    .calc_combates__btn {
+      outline: none;
+
+      font-family: roboto, arial, sans-serif; //TODO: Move this to custom prop
+      font-weight: 100;
+      font-size: 2rem;
+      text-align: start;
+
+      max-width: 65%;
+      padding: 1rem 1.5rem;
+
+      align-self: center;
+      margin-top: auto;
+    }
+
+    footer {
+      align-self: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+
+      section {
+        font-family: roboto, arial, sans-serif;
+        color: #EBEBEB;
+        padding: 0 16px;
+
+        ul {
+          list-style: none;
+          padding: 0;
+          font-size: 1.2rem;
+
+          a {
+            text-decoration: none;
+            color: #EBEBEB;
+          }
         }
       }
     }
-  }
 
-  .nav_bar__button {
-    font-family: styles.$FONT_KLAUDIA;
+    .nav_bar__button {
+      font-family: styles.$FONT_KLAUDIA;
+    }
   }
 }
+
