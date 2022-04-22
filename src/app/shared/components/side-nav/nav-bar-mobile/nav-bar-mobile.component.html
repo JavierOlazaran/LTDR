@@ -1,0 +1,27 @@
+<!-- TODO: Add aria -->
+
+<nav class="mobileNavbar" [ngClass]="{ 'expanded': isNavbarExpanded, '' : !isNavbarExpanded }">
+  <div class="titleBar">
+    <img
+      class="logo_taberna"
+      src="../../../../assets/imgs/chest.svg"
+      alt="Logo taberna">
+    <h1>La Taberna De Rol</h1>
+  </div>
+
+  <div
+    *ngIf="isNavbarExpanded"
+    @expand
+    @fold
+    class="mobileNavbar__hiddenControlsContainer--expanded"
+  >
+    <app-page-navigation></app-page-navigation>
+  </div>
+
+  <div class="mobileNavbar__permanentControlsContainer">
+
+    <app-combat-calculator-btn></app-combat-calculator-btn>
+
+    <app-hamburger-btn (toggle)="onToggleClick($event)"></app-hamburger-btn>
+  </div>
+</nav>

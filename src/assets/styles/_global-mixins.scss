@@ -1,0 +1,14 @@
+@mixin transparent_background_img--pseudo-element($IMG_URL, $OPACITY) {
+  content: '';
+  background-image: url($IMG_URL);
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: $OPACITY;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -10;
+}

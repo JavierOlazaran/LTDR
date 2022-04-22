@@ -1,0 +1,16 @@
+<button class="hamburgerBtn" (click)="onToggle()">
+  <div
+    class="hamburgerBtn__HamburgerStripe stripeFirst"
+    [@firstStripeOpenClose] = "_toggleState ? 'opened' : ''">
+  </div>
+
+  <div
+    class="hamburgerBtn__HamburgerStripe stripeMiddle"
+    [@middleStripeOpenClose] = "_toggleState ? 'opened' : ''">
+  </div>
+
+  <div
+    class="hamburgerBtn__HamburgerStripe stripeLast"
+    [@lastStripeOpenClose] = "_toggleState ? 'opened' : ''">
+  </div>
+</button>

@@ -4,12 +4,35 @@
   font-family: roboto;
   font-weight: 100;
   font-size: 1.5rem;
-  text-align: start;
+  text-align: center;
 
-  width: 100%;
-  height: 100%;
-  padding: 1rem 1.5rem;
+  width: max-content;
+  height: max-content;
+  padding: 2rem;
 
   align-self: center;
   margin-top: auto;
+
+  position: relative;
+
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    background-image: url('../../../../assets/imgs/svg/combat-icon.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -10;
+  }
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+  }
 }

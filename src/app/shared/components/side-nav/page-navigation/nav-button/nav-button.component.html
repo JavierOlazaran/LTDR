@@ -1,0 +1,9 @@
+<a href="{{buttonData.route}}" class="nav_bar__button">
+  <span class="nav_bar__buttonIcon">
+    <svg height="17px" width="17px">
+      <use [attr.xlink:href]="buttonData.iconSrc"></use>
+    </svg>
+  </span>
+  
+  {{buttonData.name | uppercase}}
+</a>

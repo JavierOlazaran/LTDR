@@ -1,0 +1,101 @@
+@use "src/assets/styles";
+
+$TITTLE_BAR_HEIGHT: 80px;
+
+.titleBar {
+  width: 100vw;
+  height: $TITTLE_BAR_HEIGHT;
+  box-sizing: border-box;
+  z-index: 1000;
+
+  display: flex;
+  padding: 1rem 1.5rem;
+  margin-bottom: auto;
+  align-items: center;
+
+  background: styles.$LTDR_BLURRY_VIOLET_DARK;
+  backdrop-filter: blur(30px);
+  border: solid 1px styles.$LTDR_VIOLET_800;
+  box-shadow: 10px 1px 9px -6px rgba(0, 0, 0, 0.63);
+
+  h1 {
+    font-family: styles.$FONT_KLAUDIA;
+    margin-left: 6vw;
+    margin-right: auto;
+    font-size: 3.2em;
+    color: styles.$LTDR_WHITE;
+  }
+}
+
+.mobileNavbar {
+
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  z-index: 100;
+
+  display: flex;
+  flex-direction: column;
+
+  &__hiddenControlsContainer {
+
+    &--expanded {
+      padding: 1rem 2rem;
+      background-color: styles.$LTDR_BLURRY_VIOLET_DARK;
+      backdrop-filter: blur(30px);
+      height: 100vh;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+
+  &__permanentControlsContainer {
+    box-sizing: border-box;
+    padding: 2rem;
+    height: min-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    background: styles.$LTDR_BLURRY_VIOLET_DARK;
+    backdrop-filter: blur(30px);
+    border: solid 1px styles.$LTDR_VIOLET_800;
+    box-shadow: 10px 1px 9px -6px rgba(0, 0, 0, 0.63);
+
+    .mobileNavbar__combatCalculatorButton {
+      outline: none;
+
+      font-family: roboto, arial, sans-serif; //TODO: Move this to custom prop
+      font-weight: 100;
+      font-size: 1.3rem;
+      text-align: left;
+      height: min-content;
+
+      max-width: 65%;
+      padding: 1em 1.5em;
+    }
+
+  }
+
+  &__toggleButton {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    color: styles.$LTDR_WHITE;
+    height: 3em;
+    width: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &HamburgerStripe {
+      width: 100%;
+      height: 4px;
+      background-color: styles.$LTDR_BEIGE-GREEN;
+    }
+  }
+}

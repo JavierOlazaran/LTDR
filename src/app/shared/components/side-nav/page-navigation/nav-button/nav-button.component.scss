@@ -1,0 +1,22 @@
+@use '../../../../../../assets/styles';
+
+.nav_bar__button {
+  text-decoration: none;
+  text-align: start;
+  color: styles.$LTDR_WHITE;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  padding: 1.6rem 3.2rem;
+  transition: background 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  &:hover {
+    background: styles.$LTDR_ACCENT_GRADIENT
+  }
+
+  &Icon {
+    margin-right: 1.5em;
+  }
+}
+
+
