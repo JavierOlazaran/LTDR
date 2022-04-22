@@ -55,9 +55,11 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr;
+      margin: 1.5em 0;
 
       section {
         font-family: roboto, arial, sans-serif;
+        font-size: 2em;
         color: #EBEBEB;
         padding: 0 16px;
 

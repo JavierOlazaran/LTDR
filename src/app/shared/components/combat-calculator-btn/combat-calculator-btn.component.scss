@@ -15,6 +15,8 @@
 
   position: relative;
 
+  cursor: pointer;
+
   &::before {
     content: '';
     background-image: url('../../../../assets/imgs/svg/combat-icon.svg');
@@ -28,5 +30,9 @@
     bottom: 0;
     right: 0;
     z-index: -10;
+  }
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.25);
   }
 }

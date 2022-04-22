@@ -1,16 +1,16 @@
 @use "src/assets/styles";
 
+$TITTLE_BAR_HEIGHT: 80px;
+
 .titleBar {
-  position: fixed;
-  top: 0;
   width: 100vw;
-  height: min-content;
+  height: $TITTLE_BAR_HEIGHT;
   box-sizing: border-box;
   z-index: 1000;
 
   display: flex;
-  padding: 1rem 1rem 1rem 0;
-  justify-content: space-around;
+  padding: 1rem 1.5rem;
+  margin-bottom: auto;
   align-items: center;
 
   background: styles.$LTDR_BLURRY_VIOLET_DARK;
@@ -20,7 +20,8 @@
 
   h1 {
     font-family: styles.$FONT_KLAUDIA;
-    margin: 0;
+    margin-left: 6vw;
+    margin-right: auto;
     font-size: 3.2em;
     color: styles.$LTDR_WHITE;
   }
@@ -31,22 +32,20 @@
   position: fixed;
   bottom: 0;
   width: 100vw;
-  height: min-content;// $FOLDED_NAVBAR-HEIGHT;
+  height: 100vh;
   box-sizing: border-box;
   z-index: 100;
 
+  display: flex;
+  flex-direction: column;
 
   &__hiddenControlsContainer {
-
-    &--folded {
-      height: 0;
-    }
 
     &--expanded {
       padding: 1rem 2rem;
       background-color: styles.$LTDR_BLURRY_VIOLET_DARK;
       backdrop-filter: blur(30px);
-      height: 100%;
+      height: 100vh;
       width: 100%;
       box-sizing: border-box;
     }
@@ -60,6 +59,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 
     background: styles.$LTDR_BLURRY_VIOLET_DARK;
     backdrop-filter: blur(30px);
