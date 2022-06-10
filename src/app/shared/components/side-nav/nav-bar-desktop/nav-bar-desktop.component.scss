@@ -14,9 +14,9 @@
 
   &__wrapper {
     // TODO: set as mixin //
-    background: styles.$LTDR_BLURRY_VIOLET_DARK;
+    background: var(--LTDR-THEME_BLURRY_VIOLET_DARK);
     backdrop-filter: blur(30px);
-    border: solid 1px styles.$LTDR_VIOLET_800;
+    border: solid 1px var(--LTDR-THEME_VIOLET_800);
     box-shadow: 10px 1px 9px -6px rgba(0, 0, 0, 0.63);
     //////////
 
@@ -38,7 +38,7 @@
     .calc_combates__btn {
       outline: none;
 
-      font-family: roboto, arial, sans-serif; //TODO: Move this to custom prop
+      font-family: var(--LTDR-TYPEFACE_SECONDARY);
       font-weight: 100;
       font-size: 2rem;
       text-align: start;
@@ -77,7 +77,7 @@
     }
 
     .nav_bar__button {
-      font-family: styles.$FONT_KLAUDIA;
+      font-family: var(--LTDR-TYPEFACE_PRIMARY);
     }
   }
 }

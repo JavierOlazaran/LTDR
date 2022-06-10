@@ -1,9 +1,7 @@
-@use '../../../../../assets/styles';
-
 .nav_links__wrapper {
   padding: 0;
   margin: 0;
-  font-family: styles.$FONT_KLAUDIA;
+  font-family: var(--LTDR-TYPEFACE_PRIMARY);
   display: flex;
   flex-direction: column;
 
