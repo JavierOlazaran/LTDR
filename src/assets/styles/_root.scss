@@ -1,0 +1,46 @@
+:root {
+
+  // Theme palette START
+
+  // LTDR - Violet
+    --LTDR-THEME_VIOLET_800: #1A0A17;
+    --LTDR-THEME_VIOLET_700: #33142D;
+    --LTDR-THEME_VIOLET_600: #4D1E44;
+    --LTDR-THEME_VIOLET_500: #642759;
+    --LTDR-THEME_VIOLET_400: #803271;
+    --LTDR-THEME_VIOLET_300: #993C88;
+    --LTDR-THEME_VIOLET_200: #B3469F;
+
+    // LTDR - Green
+    --LTDR-THEME_GREEN_800: #294D39;
+    --LTDR-THEME_GREEN_700: #36664D;
+    --LTDR-THEME_GREEN_600: #448060;
+    --LTDR-THEME_GREEN_500: #519872;
+    --LTDR-THEME_GREEN_400: #5FB386;
+    --LTDR-THEME_GREEN_300: #6DCC99;
+    --LTDR-THEME_GREEN_200: #7AE6AC;
+
+    // Palette Aux Colors
+    --LTDR-THEME_DIMMED_GREEN: #A4B494;
+    --LTDR-THEME_BEIGE-GREEN: #BEC5AD;
+    --LTDR-THEME_GRAY_DARK: #252525;
+    // Theme palette END
+
+
+    // Gradients
+    --LTDR-THEME_ACCENT_GRADIENT: linear-gradient(148deg,
+    rgba(63, 45, 67, 1) 0%,
+    rgba(100, 39, 89, 1) 47%,
+    rgba(100, 39, 89, 1) 100%);
+
+    // Special effects
+    --LTDR-THEME_BLURRY_VIOLET_DARK: rgba(63, 45, 67, 0.4);
+    --LTDR-THEME_BLACK: #000000;
+    --LTDR-THEME_SEMITONE: #AFAFAF;
+    --LTDR-THEME_WHITE: #FFFFFF;
+    --LTDR-THEME_BLURRY_VIOLET_BTN: #866088;
+
+    // Typefaces
+    --LTDR-TYPEFACE_PRIMARY: 'IM-fell-french-cannon';
+    --LTDR-TYPEFACE_SECONDARY: 'roboto', 'arial';
+}

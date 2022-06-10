@@ -1,4 +1,3 @@
-@use "src/assets/styles";
 
 .hamburgerBtn {
   outline: none;
@@ -12,7 +11,7 @@
   &__HamburgerStripe {
     width: 100%;
     height: 6px;
-    background-color: styles.$LTDR_BEIGE-GREEN;
+    background-color: var(--LTDR-THEME_BEIGE-GREEN);
     border-radius: 4px;
     position: absolute;
 

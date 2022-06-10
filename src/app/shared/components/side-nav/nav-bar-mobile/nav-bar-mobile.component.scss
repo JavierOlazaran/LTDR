@@ -13,17 +13,17 @@ $TITTLE_BAR_HEIGHT: 80px;
   margin-bottom: auto;
   align-items: center;
 
-  background: styles.$LTDR_BLURRY_VIOLET_DARK;
+  background-color: var(--LTDR-THEME_BLURRY_VIOLET_DARK);
   backdrop-filter: blur(30px);
-  border: solid 1px styles.$LTDR_VIOLET_800;
+  border: solid 1px var(--LTDR-THEME_VIOLET_800);
   box-shadow: 10px 1px 9px -6px rgba(0, 0, 0, 0.63);
 
   h1 {
-    font-family: styles.$FONT_KLAUDIA;
+    font-family: var(--LTDR-TYPEFACE_PRIMARY);
     margin-left: 6vw;
     margin-right: auto;
     font-size: 3.2em;
-    color: styles.$LTDR_WHITE;
+    color: var(--LTDR-THEME_WHITE);
   }
 }
 
@@ -43,7 +43,7 @@ $TITTLE_BAR_HEIGHT: 80px;
 
     &--expanded {
       padding: 1rem 2rem;
-      background-color: styles.$LTDR_BLURRY_VIOLET_DARK;
+      background-color: var(--LTDR-THEME_BLURRY_VIOLET_DARK);
       backdrop-filter: blur(30px);
       height: 100vh;
       width: 100%;
@@ -61,15 +61,15 @@ $TITTLE_BAR_HEIGHT: 80px;
     align-items: center;
 
 
-    background: styles.$LTDR_BLURRY_VIOLET_DARK;
+    background: var(--LTDR-THEME_BLURRY_VIOLET_DARK);
     backdrop-filter: blur(30px);
-    border: solid 1px styles.$LTDR_VIOLET_800;
+    border: solid 1px var(--LTDR-THEME_VIOLET_800);
     box-shadow: 10px 1px 9px -6px rgba(0, 0, 0, 0.63);
 
     .mobileNavbar__combatCalculatorButton {
       outline: none;
 
-      font-family: roboto, arial, sans-serif; //TODO: Move this to custom prop
+      font-family: var(--LTDR-TYPEFACE_SECONDARY);
       font-weight: 100;
       font-size: 1.3rem;
       text-align: left;
@@ -85,7 +85,7 @@ $TITTLE_BAR_HEIGHT: 80px;
     outline: none;
     background-color: transparent;
     border: none;
-    color: styles.$LTDR_WHITE;
+    color: var(--LTDR-THEME_WHITE);
     height: 3em;
     width: 3em;
     display: flex;
@@ -95,7 +95,7 @@ $TITTLE_BAR_HEIGHT: 80px;
     &HamburgerStripe {
       width: 100%;
       height: 4px;
-      background-color: styles.$LTDR_BEIGE-GREEN;
+      background-color: var(--LTDR-THEME_BEIGE-GREEN);
     }
   }
 }
