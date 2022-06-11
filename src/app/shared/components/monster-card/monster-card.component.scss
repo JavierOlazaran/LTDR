@@ -1,26 +1,24 @@
-@use "../../../../assets/styles";
-
 .monster_card__container {
   max-width: 30em;
   margin: 2rem;
   padding: 0 1.5rem 1.5rem 1.5rem;
   box-sizing: border-box;
-  font-family: styles.$FONT_ROBOTO;
+  font-family: var(--LTDR-TYPEFACE_SECONDARY);
   font-size: 2rem;
 
   &-header {
     height: 3em;
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
     justify-content: space-between;
   }
 
   &-picture {
     border-radius: .8rem;
-    border: solid 3rem styles.$LTDR_SEMITONE;
+    border: solid 3rem var(--LTDR-THEME_SEMITONE);
     margin-bottom: 3rem;
   }
-  
+
   &-img {
     box-sizing: border-box;
   }
@@ -32,7 +30,7 @@
 
   &-more{
     background: none;
-    color: styles.$LTDR_BLURRY_VIOLET_BTN;
+    color: VAR(--LTDR-THEME_BLURRY_VIOLET_BTN);
     border: none;
     padding: 0;
     font: inherit;
@@ -43,15 +41,15 @@
   }
 
   &-footer {
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
 
   }
- 
+
 &-many {
     font-size: 2rem;
     font-weight: 900;
-    color: styles.$LTDR_BLURRY_VIOLET_BTN;
+    color: var(--LTDR-THEME_BLURRY_VIOLET_BTN);
   }
   &-btn {
     margin: 0px 10px 0px 10px;
@@ -60,8 +58,8 @@
     border-radius: 30px;
     font-size: 2.5rem;
     text-align: center;
-    color: styles.$LTDR_WHITE;
-    background-color: styles.$LTDR_BLURRY_VIOLET_BTN;
+    color: var(--LTDR-THEME_WHITE);
+    background-color: var(--LTDR-THEME_BLURRY_VIOLET_BTN);
   }
-    
+
 }
