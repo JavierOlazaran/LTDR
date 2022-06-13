@@ -1,14 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27.864" height="19.737" viewBox="0 0 27.864 19.737">
-  <defs>
-    <linearGradient id="linear-gradient" x1="-0.214" y1="3.546" x2="0.953" y2="2.366" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="red"/>
-      <stop offset="1" stop-color="#b30000"/>
-    </linearGradient>
-  </defs>
-  <g id="g1190" transform="translate(0 0)">
-    <g id="Grupo_42" data-name="Grupo 42">
-      <path id="rect876" d="M-13.86-13.735H4.6c2.6,0,4.7,2.672,4.7,5.992V.01C9.3,3.33,7.207,6,4.6,6H-13.86c-2.6,0-4.7-2.672-4.7-5.992V-7.744C-18.56-11.063-16.464-13.735-13.86-13.735Z" transform="translate(18.56 13.735)" fill="url(#linear-gradient)"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27.864" height="19.737" viewBox="0 0 27.864 19.737" id="yt-icon">
+  <!-- <symbol > -->
+    <g id="g1190" transform="translate(0 0)">
+      <g id="Grupo_42" data-name="Grupo 42">
+        <path id="rect876" d="M-13.86-13.735H4.6c2.6,0,4.7,2.672,4.7,5.992V.01C9.3,3.33,7.207,6,4.6,6H-13.86c-2.6,0-4.7-2.672-4.7-5.992V-7.744C-18.56-11.063-16.464-13.735-13.86-13.735Z" transform="translate(18.56 13.735)" fill="#b30000"/>
+      </g>
+      <path id="path1154" d="M-12.551-11.288v8.551l6.313-4.115Z" transform="translate(23.326 16.881)" fill="#f9f9f9"/>
     </g>
-    <path id="path1154" d="M-12.551-11.288v8.551l6.313-4.115Z" transform="translate(23.326 16.881)" fill="#f9f9f9"/>
-  </g>
+  <!-- </symbol> -->
 </svg>

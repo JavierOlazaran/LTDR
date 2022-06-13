@@ -1,0 +1,70 @@
+.schedule-item {
+
+  &__container {
+    padding: 1.5rem 1.8rem;
+    min-width: 20rem;
+    border: 1px solid var(--LTDR-THEME_WHITE);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    margin-right: 4px;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-day {
+      margin: 0;
+      font-family: var(--LTDR-TYPEFACE_PRIMARY);
+      text-transform: uppercase;
+      font-size: 1.5rem;
+    }
+
+    &-time {
+      font-family: var(--LTDR-TYPEFACE_SECONDARY);
+      font-size: 1.2rem;
+    }
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 1rem 0;
+
+    &-media-logo {
+      height: 20px;
+      width: 28px;
+    }
+
+    &-title {
+      margin-left: 0.5rem;
+      font-family: var(--LTDR-TYPEFACE_SECONDARY);
+      font-size: 1.5rem;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    &-view-more {
+      color: var(--LTDR-THEME_GREEN_300);
+      outline: none;
+      border: none;
+      background-color: transparent;
+      font-family: var(--LTDR-TYPEFACE_SECONDARY);
+      font-size: 1.25rem;
+      cursor: pointer;
+      text-align: right;
+      padding: 0;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
