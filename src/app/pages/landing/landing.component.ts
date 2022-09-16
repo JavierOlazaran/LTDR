@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Subscription} from 'rxjs';
 
 @Component({
   selector: 'app-landing',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 
-  constructor() { }
+  private subscriptions$: Subscription[] = [];
+
+  constructor() {
+  }
 
   ngOnInit(): void {
+
+  }
+
+  //TODO: This should probably be moved to a new layer to process the data coming in the feed
+  getLatestVideos() {
+
   }
 
 }

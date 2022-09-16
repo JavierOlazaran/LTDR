@@ -11,6 +11,7 @@ import {
   MediaContentDisplayCarrouselComponent
 } from './components/media-content-display-carrousel/media-content-display-carrousel.component';
 import {MediaContentDisplayElementComponent} from './components/media-content-display-element/media-content-display-element.component';
+import {DataModule} from '../../data/data.module';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import {MediaContentDisplayElementComponent} from './components/media-content-di
   imports: [
     CommonModule,
     LandingRoutingModule,
-    SharedModule
+    SharedModule,
+    DataModule
   ]
 })
 export class LandingModule {
