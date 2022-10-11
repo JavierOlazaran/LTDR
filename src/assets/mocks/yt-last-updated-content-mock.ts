@@ -1,7 +1,7 @@
-import {YTLatestContent} from '../../app/data/dtos/youtube/yt-feed.dto';
+import {YTLatestContent} from '../../app/data/dto/youtube/yt-latest-content.dto';
 
 export const YT_LAST_UPDATED_CONTENT_MOCK: YTLatestContent = {
-  playlists: {
+  'playlists': {
     'items': [
       {
         'id': 'PLhZkbk77RBdefMZjjW19VUVelaXDXSsEC',
@@ -185,7 +185,7 @@ export const YT_LAST_UPDATED_CONTENT_MOCK: YTLatestContent = {
       }
     ]
   },
-  videos: {
+  'videos': {
     'items': [
       {
         'id': 'PLhZkbk77RBdefMZjjW19VUVelaXDXSsEC',
@@ -538,5 +538,5 @@ export const YT_LAST_UPDATED_CONTENT_MOCK: YTLatestContent = {
         }
       }
     ]
-  }
+  },
 };

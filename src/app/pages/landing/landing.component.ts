@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {Subscription} from 'rxjs';
+import {YoutubeService} from './services/youtube.service';
+import {Observable} from 'rxjs';
+import {YTLatestContent} from '../../data/dto/youtube/yt-latest-content.dto';
 
 @Component({
   selector: 'app-landing',
@@ -8,18 +10,19 @@ import {Subscription} from 'rxjs';
 })
 export class LandingComponent implements OnInit {
 
-  private subscriptions$: Subscription[] = [];
+  getLatestYTContent$: Observable<YTLatestContent>;
 
-  constructor() {
+  constructor(
+    private youtubeSvc: YoutubeService
+  ) {
   }
 
   ngOnInit(): void {
-
+    this.getLatestYTContent();
   }
 
-  //TODO: This should probably be moved to a new layer to process the data coming in the feed
-  getLatestVideos() {
+  getLatestYTContent() {
+    this.getLatestYTContent$ = this.youtubeSvc.getLatestYTContent();
 
   }
-
 }

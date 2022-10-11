@@ -3,6 +3,14 @@ export interface YTLatestContent {
   videos: LastAddedVideosCollection;
 }
 
+export interface LatestContentCollection {
+  items: any,
+}
+
+export interface LatestContentItem {
+  
+}
+
 export interface LastUpdatedPlaylistsCollection {
   items: LastUpdatedPlaylistsItem[] | undefined,
 }
