@@ -183,7 +183,13 @@
         "deploy": {
           "builder": "@angular/fire:deploy",
           "options": {
-            "ssr": true
+            "prerender": true,
+            "ssr": false,
+            "browserTarget": "LTDR:build:production",
+            "firebaseProject": "la-taberna-web",
+            "firebaseHostingSite": "la-taberna-web",
+            "serverTarget": "LTDR:server:production",
+            "prerenderTarget": "LTDR:prerender:production"
           }
         },
         "cypress-run": {

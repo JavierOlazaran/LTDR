@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {YoutubeService} from './services/youtube.service';
 import {Observable} from 'rxjs';
-import {YTLatestContent} from '../../data/dto/youtube/yt-latest-content.dto';
 
 @Component({
   selector: 'app-landing',
@@ -10,10 +9,10 @@ import {YTLatestContent} from '../../data/dto/youtube/yt-latest-content.dto';
 })
 export class LandingComponent implements OnInit {
 
-  getLatestYTContent$: Observable<YTLatestContent>;
+  getLatestYTContent$: Observable<any>;
 
   constructor(
-    private youtubeSvc: YoutubeService
+    private youtubeSvc: YoutubeService,
   ) {
   }
 
@@ -23,6 +22,8 @@ export class LandingComponent implements OnInit {
 
   getLatestYTContent() {
     this.getLatestYTContent$ = this.youtubeSvc.getLatestYTContent();
-
+    //   .subscribe(data => {
+    //   console.log(data.entries());
+    // });
   }
 }

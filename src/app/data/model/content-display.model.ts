@@ -1,39 +1,33 @@
-export interface ContentDisplayElement {
-  displayType: string, //TODO: set as type
-  displayData: ContentDisplayData,
+export interface ContentCollection {
+  items: ContentElement[];
 }
 
-export interface ContentDisplayData {
-  id: string,
-  data: ContentData, //TODO: type this property
+export interface ContentElement {
+  data: Data;
+  id: string;
 }
 
-export interface ContentDisplayDataPlaylist extends ContentDisplayData {
-  videosCount: number,
+export interface PlaylistContentElement extends ContentElement {
+  videosCount: number;
 }
 
-export interface ContentDisplayList {
-  title: string,
-  displays: ContentDisplayElement[],
-}
-
-export interface ContentData {
-  publishedAt: string,
-  title: string,
-  description: string,
-  thumbnails: Thumbnails,
+export interface Data {
+  publishedAt: string;
+  description: string;
+  title: string;
+  thumbnails: Thumbnails;
 }
 
 export interface Thumbnails {
-  default: ThumbnailData;
-  medium: ThumbnailData;
-  high: ThumbnailData;
-  standard: ThumbnailData;
-  maxres: ThumbnailData;
+  standard: ThumbnailElement;
+  default: ThumbnailElement;
+  high: ThumbnailElement;
+  maxres: ThumbnailElement;
+  medium: ThumbnailElement;
 }
 
-export interface ThumbnailData {
-  url: string;
+export interface ThumbnailElement {
   width: number;
+  url: string;
   height: number;
 }

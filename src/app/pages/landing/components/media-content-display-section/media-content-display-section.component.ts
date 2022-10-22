@@ -1,6 +1,6 @@
 import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
-import {YTLatestContent} from '../../../../data/dto/youtube/yt-latest-content.dto';
 import {Observable} from 'rxjs';
+import {ContentCollection} from '../../../../data/model/content-display.model';
 
 @Component({
   selector: 'app-media-content-display-section',
@@ -10,12 +10,15 @@ import {Observable} from 'rxjs';
 })
 export class MediaContentDisplaySectionComponent implements OnInit {
 
-  @Input() mediaContent: Observable<YTLatestContent>;
+  @Input() mediaContent: Observable<Map<string, ContentCollection>>;
 
   constructor() {
   }
 
   ngOnInit(): void {
+    // this.mediaContent.subscribe(data => {
+    //   console.log(data);
+    // });
   }
 
 }

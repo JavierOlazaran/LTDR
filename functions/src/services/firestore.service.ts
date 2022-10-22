@@ -12,7 +12,7 @@ export class FirestoreService {
     const _parsedData = _mapper.mapLastUpdatedPlaylistsCollection(crudeData);
 
     await admin.firestore()
-      .collection(FirestoreCollectionsEnum.PLAYLISTS)
+      .collection(FirestoreCollectionsEnum.LATEST_CONTENT)
       .doc(FirestoreDocumentsEnum.LAST_UPDATED_PLAYLISTS)
       .set(_parsedData!);
 
@@ -24,7 +24,7 @@ export class FirestoreService {
     const _parsedData = _mapper.mapLastAddedVideosCollection(crudeData);
 
     await admin.firestore()
-      .collection(FirestoreCollectionsEnum.VIDEOS)
+      .collection(FirestoreCollectionsEnum.LATEST_CONTENT)
       .doc(FirestoreDocumentsEnum.LAST_ADDED_VIDEOS)
       .set(_parsedData!);
 

@@ -1,14 +1,14 @@
 {
   "targets": {
-    "la-taberna-web": {
+    "La_Taberna_Web": {
       "hosting": {
         "LTDR": [
-          "la-taberna-web"
+          "La_Taberna_Web"
         ]
       }
     }
   },
   "projects": {
-    "default": "la-taberna-web"
+    "default": "La_Taberna_Web"
   }
 }
