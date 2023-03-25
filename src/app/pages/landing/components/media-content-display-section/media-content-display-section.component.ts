@@ -1,6 +1,5 @@
 import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
 import {Observable} from 'rxjs';
-import {ContentCollection} from '../../../../data/model/content-display.model';
 
 @Component({
   selector: 'app-media-content-display-section',
@@ -10,7 +9,7 @@ import {ContentCollection} from '../../../../data/model/content-display.model';
 })
 export class MediaContentDisplaySectionComponent implements OnInit {
 
-  @Input() mediaContent: Observable<Map<string, ContentCollection>>;
+  // @Input() mediaContent: Observable<Map<string, ContentCollection>>;
 
   constructor() {
   }

@@ -1,5 +1,4 @@
 import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
-import {ContentCollection} from '../../../../data/model/content-display.model';
 
 @Component({
   selector: 'app-media-content-display-carrousel',
@@ -9,7 +8,7 @@ import {ContentCollection} from '../../../../data/model/content-display.model';
 })
 export class MediaContentDisplayCarrouselComponent implements OnInit {
 
-  @Input() contentCollection: ContentCollection;
+  // @Input() contentCollection: ContentCollection;
 
   constructor() {
   }

@@ -1,33 +1,48 @@
-export interface ContentCollection {
-  items: ContentElement[];
+export interface YTContentDTO {
+  playlists: Playlists;
+  videos: Videos;
 }
 
-export interface ContentElement {
-  data: Data;
+export interface Videos {
   id: string;
+  collectionId: string;
+  videos: Video[];
 }
 
-export interface PlaylistContentElement extends ContentElement {
-  videosCount: number;
+export interface Video {
+  videoID: string;
+  videoTitle: string;
+  videoDescription: string;
+  videoThumbnail: Thumbnails;
+  videoPublished: string;
+  videoLastUpdated?: any;
 }
 
-export interface Data {
-  publishedAt: string;
-  description: string;
-  title: string;
-  thumbnails: Thumbnails;
+export interface Playlists {
+  id: string;
+  collectionId: string;
+  playlists: PlaylistItem[];
+}
+
+export interface PlaylistItem {
+  id: string;
+  playlistTitle: string;
+  playlistDescription: string;
+  playlistThumbnail: Thumbnails;
+  playlistVideoCount: number;
+  playlistLastUpdated: string;
 }
 
 export interface Thumbnails {
-  standard: ThumbnailElement;
-  default: ThumbnailElement;
-  high: ThumbnailElement;
-  maxres: ThumbnailElement;
-  medium: ThumbnailElement;
+  default: ThumbnailMetadata;
+  medium: ThumbnailMetadata;
+  high: ThumbnailMetadata;
+  standard: ThumbnailMetadata;
+  maxres: ThumbnailMetadata;
 }
 
-export interface ThumbnailElement {
+export interface ThumbnailMetadata {
+  height: number;
   width: number;
   url: string;
-  height: number;
 }
