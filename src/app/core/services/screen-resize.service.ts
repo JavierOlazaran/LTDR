@@ -31,10 +31,6 @@ export class ScreenResizeService {
     return this.screenSizeSubject$;
   }
 
-  getScreenSizeSnapshot(): ScreenInnerSize {
-    return this.screenSizeSubject$.value;
-  }
-
   setScreenSize(screenSize: ScreenInnerSize): void {
     this.screenSizeSubject$.next(screenSize);
   }

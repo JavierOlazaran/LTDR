@@ -1,0 +1,23 @@
+.mediaDisplaySection {
+
+  &__container {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 2rem 4rem;
+    width: 100%;
+  }
+
+  &__header {
+
+    &Title { //TODO: should be a global class .sectionTitle
+      font-family: var(--LTDR-TYPEFACE_PRIMARY);
+      font-size: 1.8rem;
+      font-weight: normal;
+      text-align: center;
+      text-transform: uppercase;
+      flex-shrink: 0;
+      margin-top: 0;
+      margin-bottom: 1.5em;
+    }
+  }
+}

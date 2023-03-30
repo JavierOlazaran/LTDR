@@ -14,10 +14,10 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     BrowserModule.withServerTransition({appId: 'serverApp'}),
     AppRoutingModule,
     SharedModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule {
 }
