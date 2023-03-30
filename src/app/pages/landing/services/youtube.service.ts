@@ -13,6 +13,6 @@ export class YoutubeService {
   ) {}
 
   getLatestYTContent(): Observable<YTContentDTO> {
-    return new Observable<YTContentDTO>();
+    return this.http.get<YTContentDTO>('/GetLatestYTContent');
   }
 }

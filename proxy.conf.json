@@ -1,0 +1,8 @@
+{
+  "/GetLatestYTContent": {
+    "target": "https://ytwebhooktest.azurewebsites.net/api",
+    "secure": true,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}

@@ -12,6 +12,8 @@ import {
 } from './components/media-content-display-carrousel/media-content-display-carrousel.component';
 import {MediaContentDisplayElementComponent} from './components/media-content-display-element/media-content-display-element.component';
 import {DataModule} from '../../data/data.module';
+import { HttpClientModule } from '@angular/common/http';
+import { YoutubeService } from './services/youtube.service';
 
 
 @NgModule({
@@ -21,14 +23,17 @@ import {DataModule} from '../../data/data.module';
     ScheduleItemComponent,
     MediaContentDisplaySectionComponent,
     MediaContentDisplayCarrouselComponent,
-    MediaContentDisplayElementComponent
+    MediaContentDisplayElementComponent,
   ],
   imports: [
     CommonModule,
     LandingRoutingModule,
     SharedModule,
-    DataModule
+    DataModule,
+    HttpClientModule
+  ],
+  providers: [
+    YoutubeService
   ]
 })
-export class LandingModule {
-}
+export class LandingModule {}
