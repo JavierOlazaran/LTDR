@@ -1,12 +1,7 @@
 export interface YTContentDTO {
-  playlists: Playlists;
-  videos: Videos;
-}
-
-export interface Videos {
-  id: string;
-  collectionId: string;
+  playlists: Playlist[];
   videos: Video[];
+  shorts: Video[];
 }
 
 export interface Video {
@@ -18,13 +13,7 @@ export interface Video {
   videoLastUpdated?: any;
 }
 
-export interface Playlists {
-  id: string;
-  collectionId: string;
-  playlists: PlaylistItem[];
-}
-
-export interface PlaylistItem {
+export interface Playlist {
   id: string;
   playlistTitle: string;
   playlistDescription: string;

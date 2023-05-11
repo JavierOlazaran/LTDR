@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {YoutubeService} from './services/youtube.service';
 
 @Component({
   selector: 'app-landing',
@@ -8,19 +7,7 @@ import {YoutubeService} from './services/youtube.service';
 })
 export class LandingComponent implements OnInit {
 
-  constructor(
-    private youtubeSvc: YoutubeService,
-  ) {
-  }
+  constructor() {}
 
-  ngOnInit(): void {
-    this.getLatestYTContent();
-  }
-
-  getLatestYTContent() {
-    this.youtubeSvc.getLatestYTContent()
-      .subscribe(data => {
-        console.log(data);
-    });
-  }
+  ngOnInit(): void {}
 }

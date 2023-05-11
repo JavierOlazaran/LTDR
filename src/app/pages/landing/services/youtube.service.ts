@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import {Injectable} from '@angular/core';
 import {Observable} from 'rxjs';
-import {YTContentDTO} from '../../../data/model/content-display.model';
+import { YTContentDTO } from '../yt-latest-content.dto';
 
 
 @Injectable({

@@ -7,10 +7,6 @@ import {LandingComponent} from './landing.component';
 import {ScheduleBlockComponent} from './components/schedule-block/schedule-block.component';
 import {ScheduleItemComponent} from './components/schedule-item/schedule-item.component';
 import {MediaContentDisplaySectionComponent} from './components/media-content-display-section/media-content-display-section.component';
-import {
-  MediaContentDisplayCarrouselComponent
-} from './components/media-content-display-carrousel/media-content-display-carrousel.component';
-import {MediaContentDisplayElementComponent} from './components/media-content-display-element/media-content-display-element.component';
 import {DataModule} from '../../data/data.module';
 import { HttpClientModule } from '@angular/common/http';
 import { YoutubeService } from './services/youtube.service';
@@ -22,8 +18,6 @@ import { YoutubeService } from './services/youtube.service';
     ScheduleBlockComponent,
     ScheduleItemComponent,
     MediaContentDisplaySectionComponent,
-    MediaContentDisplayCarrouselComponent,
-    MediaContentDisplayElementComponent,
   ],
   imports: [
     CommonModule,

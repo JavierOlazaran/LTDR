@@ -1,14 +1,33 @@
 <div class="mediaDisplaySection__container">
   <div class="mediaDisplaySection__header">
-    <h3 class="mediaDisplaySection__headerTitle">Contenido</h3>
+    <h3 class="mediaDisplaySection__headerTitle acrylic__block">Contenido</h3>
   </div>
 
   <div class="mediaDisplaySection__body">
-
-    <!-- <ng-container *ngFor="let content of mediaContent | async | keyvalue">
-      <app-media-content-display-carrousel [contentCollection]="content.value">
-      </app-media-content-display-carrousel>
-    </ng-container> -->
-
+    <div class="slideshow">
+      <div class="slide" *ngFor="let video of youtubeContent.videos">
+        <img [src]="video.videoThumbnail.high.url" alt="{{ video.videoTitle }}" />
+        <div class="caption">{{ video.videoTitle }}</div>
+      </div>
+    </div>
   </div>
+
+  <div class="mediaDisplaySection__body">
+    <div class="slideshow">
+      <div class="slide" *ngFor="let playlist of youtubeContent.playlists">
+        <img [src]="playlist.playlistThumbnail.high.url" alt="{{ playlist.playlistTitle }}" />
+        <div class="caption">{{ playlist.playlistTitle }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mediaDisplaySection__body">
+    <div class="slideshow">
+      <div class="slide" *ngFor="let short of youtubeContent.shorts">
+        <img [src]="short.videoThumbnail.high.url" alt="{{ short.videoTitle }}" />
+        <div class="caption">{{ short.videoTitle }}</div>
+      </div>
+    </div>
+  </div>
+
 </div>
