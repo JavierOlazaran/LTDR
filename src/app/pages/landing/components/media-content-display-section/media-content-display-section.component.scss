@@ -7,9 +7,7 @@
   }
 
   &__header {
-      position: sticky;
-      top: 1rem;
-
+    height: 10%;
     &Title { //TODO: should be a global class .sectionTitle
       font-family: var(--LTDR-TYPEFACE_PRIMARY);
       font-size: 1.8rem;
@@ -21,7 +19,12 @@
     }
   }
 
-  &__body {
+  &__body{
+    height: 90%;
+    overflow-y: auto;
+  }
+  &__carrousel {
+
     &:not(:last-child) {
       margin-bottom: 5rem;
     }

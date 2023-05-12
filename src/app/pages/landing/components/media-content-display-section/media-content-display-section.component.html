@@ -4,6 +4,7 @@
   </div>
 
   <div class="mediaDisplaySection__body">
+  <div class="mediaDisplaySection__carrousel">
     <div class="slideshow">
       <div class="slide" *ngFor="let video of youtubeContent.videos">
         <img [src]="video.videoThumbnail.high.url" alt="{{ video.videoTitle }}" />
@@ -12,7 +13,7 @@
     </div>
   </div>
 
-  <div class="mediaDisplaySection__body">
+  <div class="mediaDisplaySection__carrousel">
     <div class="slideshow">
       <div class="slide" *ngFor="let playlist of youtubeContent.playlists">
         <img [src]="playlist.playlistThumbnail.high.url" alt="{{ playlist.playlistTitle }}" />
@@ -21,13 +22,14 @@
     </div>
   </div>
 
-  <div class="mediaDisplaySection__body">
+  <div class="mediaDisplaySection__carrousel">
     <div class="slideshow">
       <div class="slide" *ngFor="let short of youtubeContent.shorts">
         <img [src]="short.videoThumbnail.high.url" alt="{{ short.videoTitle }}" />
         <div class="caption">{{ short.videoTitle }}</div>
       </div>
     </div>
+  </div>
   </div>
 
 </div>
