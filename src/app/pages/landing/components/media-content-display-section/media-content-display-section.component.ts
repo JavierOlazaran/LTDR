@@ -18,7 +18,6 @@ export class MediaContentDisplaySectionComponent implements OnInit {
     shorts: [],
   };
 
-
   constructor(
     private youtubeSvc: YoutubeService,
     private changeDetector: ChangeDetectorRef,

@@ -3,33 +3,36 @@
     <h3 class="mediaDisplaySection__headerTitle acrylic__block">Contenido</h3>
   </div>
 
-  <div class="mediaDisplaySection__body">
-  <div class="mediaDisplaySection__carrousel">
-    <div class="slideshow">
-      <div class="slide" *ngFor="let video of youtubeContent.videos">
-        <img [src]="video.videoThumbnail.high.url" alt="{{ video.videoTitle }}" />
-        <div class="caption">{{ video.videoTitle }}</div>
+    <div class="mediaDisplaySection__body">
+    <div class="mediaDisplaySection__carrousel">
+      <div class="slideshow">
+        <ng-container *ngFor="let video of youtubeContent.videos">
+          <div class="slide">
+            <LTDR-video-display [video]="video"/>
+          </div>
+        </ng-container>
       </div>
     </div>
-  </div>
 
-  <div class="mediaDisplaySection__carrousel">
-    <div class="slideshow">
-      <div class="slide" *ngFor="let playlist of youtubeContent.playlists">
-        <img [src]="playlist.playlistThumbnail.high.url" alt="{{ playlist.playlistTitle }}" />
-        <div class="caption">{{ playlist.playlistTitle }}</div>
+    <div class="mediaDisplaySection__carrousel">
+      <div class="slideshow">
+        <div class="slide" *ngFor="let playlist of youtubeContent.playlists">
+          <img [src]="playlist.playlistThumbnail.high.url" alt="{{ playlist.playlistTitle }}" />
+          <div class="caption">{{ playlist.playlistTitle }}</div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="mediaDisplaySection__carrousel">
-    <div class="slideshow">
-      <div class="slide" *ngFor="let short of youtubeContent.shorts">
-        <img [src]="short.videoThumbnail.high.url" alt="{{ short.videoTitle }}" />
-        <div class="caption">{{ short.videoTitle }}</div>
+    <div class="mediaDisplaySection__carrousel">
+      <div class="slideshow">
+        <ng-container *ngFor="let short of youtubeContent.shorts">
+          <div class="slide">
+            <LTDR-video-display [video]="short" />
+          </div>
+        </ng-container>
       </div>
     </div>
-  </div>
+
   </div>
 
 </div>

@@ -10,6 +10,7 @@ import {MediaContentDisplaySectionComponent} from './components/media-content-di
 import {DataModule} from '../../data/data.module';
 import { HttpClientModule } from '@angular/common/http';
 import { YoutubeService } from './services/youtube.service';
+import { VideoDisplayComponent } from './components/video-display/video-display.component';
 
 
 @NgModule({
@@ -24,10 +25,9 @@ import { YoutubeService } from './services/youtube.service';
     LandingRoutingModule,
     SharedModule,
     DataModule,
-    HttpClientModule
+    HttpClientModule,
+    VideoDisplayComponent
   ],
-  providers: [
-    YoutubeService
-  ]
+  providers: [YoutubeService],
 })
 export class LandingModule {}
