@@ -1,0 +1,95 @@
+.playlist_display {
+
+  $DISPLAY_WIDTH: 230px;
+  $DISPLAY_HEIGHT: 270px;
+
+  &__container {
+      flex: 0 0 $DISPLAY_WIDTH; /* Adjust card width */
+      height: 270px; /* Adjust card height */
+      width: $DISPLAY_WIDTH;
+      background-color: rgba(0, 0, 0, 0.5);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      margin-right: 20px; /* Spacing between cards */
+      transition: transform 0.3s, box-shadow 0.3s;
+      transform-origin: center top; /* Transform origin for scaling */
+      position: relative; /* Required for the z-index */
+      z-index: 1; /* Ensure expanded card is on top */
+      font-family: var(--LTDR-TYPEFACE_SECONDARY);
+
+      &:hover {
+        transform: scale(1.05) translateY(-10px); /* Lift the card slightly */
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        position: relative;
+        z-index: 2; /* Move hovered card to the top */
+      }
+  }
+
+  &__thumb {
+    width: 100%;
+
+    &_container {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      overflow: clip;
+    }
+  }
+
+  &__list_info {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(17, 35, 51, 0.8);
+    color: var(--LTDR-THEME_WHITE);
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+
+    &__icon {
+      fill: var(--LTDR-THEME_WHITE);
+      width: 1rem;
+      aspect-ratio: 1;
+      margin-right: 0.5rem;
+    }
+
+    &__legend {
+      display: block;
+      white-space: nowrap;
+      width: 80%;
+      font-size: 1.5rem;
+    }
+  }
+
+  &__content_container {
+    max-height: 100%;
+    overflow: hidden;
+  }
+
+  &__title {
+    font-family: var(--LTDR-TYPEFACE_SECONDARY);
+    color: #f1f1f1;
+    overflow: hidden;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: start;
+    white-space: normal;
+    text-overflow: ellipsis;
+    margin: 0.5rem 0 1rem 0;
+    display: box;
+    display: -webkit-box;
+    max-height: 4.4rem;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 2.2rem;
+  }
+
+  &__description {
+    font-family: var(--LTDR-TYPEFACE_SECONDARY);
+    font-size: 1.2rem;
+    text-align: start;
+    color: #AAA;
+  }
+}

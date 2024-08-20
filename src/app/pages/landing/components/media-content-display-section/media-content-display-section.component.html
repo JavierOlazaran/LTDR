@@ -3,33 +3,28 @@
     <h3 class="mediaDisplaySection__headerTitle acrylic__block">Contenido</h3>
   </div>
 
-    <div class="mediaDisplaySection__body">
+  <div class="mediaDisplaySection__body">
     <div class="mediaDisplaySection__carrousel">
       <div class="slideshow">
-        <ng-container *ngFor="let video of youtubeContent.videos">
-          <div class="slide">
-            <LTDR-video-display [video]="video"/>
-          </div>
-        </ng-container>
+        <LTDR-media-slide *ngFor="let video of youtubeContent.videos">
+          <LTDR-video-display [video]="video" style="display: flex;"/>
+        </LTDR-media-slide>
       </div>
     </div>
 
     <div class="mediaDisplaySection__carrousel">
       <div class="slideshow">
-        <div class="slide" *ngFor="let playlist of youtubeContent.playlists">
-          <img [src]="playlist.playlistThumbnail.high.url" alt="{{ playlist.playlistTitle }}" />
-          <div class="caption">{{ playlist.playlistTitle }}</div>
-        </div>
+        <LTDR-media-slide *ngFor="let playlist of youtubeContent.playlists">
+          <LTDR-playlist-display [playlist]="playlist"/>
+        </LTDR-media-slide>
       </div>
     </div>
 
     <div class="mediaDisplaySection__carrousel">
       <div class="slideshow">
-        <ng-container *ngFor="let short of youtubeContent.shorts">
-          <div class="slide">
-            <LTDR-video-display [video]="short" />
-          </div>
-        </ng-container>
+        <LTDR-media-slide *ngFor="let short of youtubeContent.shorts">
+          <LTDR-video-display [video]="short" />
+        </LTDR-media-slide>
       </div>
     </div>
 

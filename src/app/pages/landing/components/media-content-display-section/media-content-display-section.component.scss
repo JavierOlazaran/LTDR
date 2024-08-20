@@ -43,15 +43,23 @@
   &__carrousel {
 
     &:not(:last-child) {
-      margin-bottom: 5rem;
+      margin-bottom: 1rem;
     }
   }
 }
 
 .slideshow {
+      position: relative;
+      height: 310px;
+      align-items: center;
+      padding-left: 30px;
+      padding-right: 30px;
+      width: 100%;
       display: flex;
-      gap: 1.5rem;      overflow-x: scroll;
-      scroll-behavior: smooth;
+      overflow-x: auto; /* Enable horizontal scrolling */
+      overflow-y: visible;
+      transition: transform 0.3s ease-in-out;
+      scroll-behavior: smooth; /* Smooth scrolling behavior */
       -webkit-overflow-scrolling: touch;
 
       scrollbar-color: var(--LTDR-THEME_WHITE) rgba(255, 255, 255, 0.3);

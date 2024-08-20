@@ -11,7 +11,8 @@ import {DataModule} from '../../data/data.module';
 import { HttpClientModule } from '@angular/common/http';
 import { YoutubeService } from './services/youtube.service';
 import { VideoDisplayComponent } from './components/video-display/video-display.component';
-
+import { PlaylistDisplayComponent } from './components/playlist-display/playlist-display.component';
+import { MediaSlideComponent } from './components/media-slide/media-slide.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,9 @@ import { VideoDisplayComponent } from './components/video-display/video-display.
     SharedModule,
     DataModule,
     HttpClientModule,
-    VideoDisplayComponent
+    VideoDisplayComponent,
+    PlaylistDisplayComponent,
+    MediaSlideComponent,
   ],
   providers: [YoutubeService],
 })

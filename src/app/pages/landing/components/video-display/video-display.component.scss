@@ -1,13 +1,26 @@
 .video_display {
 
+  $DISPLAY_WIDTH: 230px;
+  $DISPLAY_HEIGHT: 270px;
+
   &__container {
-      padding: 0 10px;
-      text-align: center;
-      min-width: 240px;
-      height: 270px;
+      flex: 0 0 $DISPLAY_WIDTH; /* Adjust card width */
+      height: 270px; /* Adjust card height */
+      width: $DISPLAY_WIDTH;
       background-color: rgba(0, 0, 0, 0.5);
-      padding: 1rem;
-      margin-bottom: 2rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      margin-right: 20px; /* Spacing between cards */
+      transition: transform 0.3s, box-shadow 0.3s;
+      transform-origin: center top; /* Transform origin for scaling */
+      position: relative; /* Required for the z-index */
+      z-index: 1; /* Ensure expanded card is on top */
+
+      &:hover {
+        transform: scale(1.05) translateY(-10px); /* Lift the card slightly */
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        position: relative;
+        z-index: 2; /* Move hovered card to the top */
+      }
   }
 
   &__thumb {
@@ -16,13 +29,14 @@
     &_container {
       max-width: 100%;
       height: auto;
-      border-radius: 12px;
+      border-radius: 8px;
       overflow: clip;
     }
   }
 
   &__content_container {
     overflow: hidden;
+    padding: 0 1rem;
   }
 
   &__title {
@@ -34,7 +48,7 @@
     text-align: start;
     white-space: normal;
     text-overflow: ellipsis;
-    margin: 0.5rem 0 1rem 0;
+    margin: 1rem 0 1rem 0;
     display: box;
     display: -webkit-box;
     max-height: 4.4rem;
@@ -49,4 +63,5 @@
     text-align: start;
     color: #AAA;
   }
+
 }

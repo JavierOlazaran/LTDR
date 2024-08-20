@@ -1,1 +1,25 @@
-<p>playlist-display works!</p>
+<div class="playlist_display__container acrylic__block">
+
+  <div class="playlist_display__thumb_container" style="position: relative;">
+    <img class="playlist_display__thumb" src="{{playlist.playlistThumbnail.medium.url}}" alt="{{playlist.playlistTitle}}">
+
+    <div class="playlist_display__list_info">
+      <svg
+          class="playlist_display__list_info__icon"
+          xmlns="http://www.w3.org/2000/svg"
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+          focusable="false"
+          style="pointer-events: none; display: block; width: 100%; height: 100%;">
+        <path d="M22 7H2v1h20V7zm-9 5H2v-1h11v1zm0 4H2v-1h11v1zm2 3v-8l7 4-7 4z"></path>
+      </svg>
+      <p class="playlist_display__list_info__legend">4</p>
+    </div>
+  </div>
+
+  <div class="playlist_display__content_container">
+    <h6 class="playlist_display__title">{{playlist.playlistTitle}}</h6>
+  </div>
+
+</div>
