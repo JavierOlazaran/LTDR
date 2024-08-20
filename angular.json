@@ -71,19 +71,19 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "LTDR:build",
-            "proxyConfig": "proxy.conf.json"
+            "proxyConfig": "proxy.conf.json",
+            "buildTarget": "LTDR:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "LTDR:build:production"
+              "buildTarget": "LTDR:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "LTDR:build"
+            "buildTarget": "LTDR:build"
           }
         },
         "test": {
@@ -158,7 +158,7 @@
           }
         },
         "serve-ssr": {
-          "builder": "@nguniversal/builders:ssr-dev-server",
+          "builder": "@angular-devkit/build-angular:ssr-dev-server",
           "options": {
             "browserTarget": "LTDR:build",
             "serverTarget": "LTDR:server"
@@ -171,7 +171,7 @@
           }
         },
         "prerender": {
-          "builder": "@nguniversal/builders:prerender",
+          "builder": "@angular-devkit/build-angular:prerender",
           "options": {
             "browserTarget": "LTDR:build:production",
             "serverTarget": "LTDR:server:production",
